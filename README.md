@@ -72,25 +72,16 @@ For many small businesses, dedicated CRM or PoS systems can be expensive or over
 
 ## Project Structure
 
-.
-
-├── lambda_function.py # AWS Lambda handler entry point
-
-├── main_logic.py # Core bot command handlers and business logic
-
-├── sheet.py # Google Sheets interaction logic
-
-├── config.py # Configuration (loading credentials, sheet ID)
-
-├── utils.py # Utility functions (currently minimal)
-
-├── requirements.txt # Python dependencies
-
-├── bot-credentials.json.example # Example structure for Google Service Account JSON
-
-├── .gitignore # Specifies intentionally untracked files
-
-└── README.md # This file
+.                                                                                                                             
+├── lambda_function.py                                                    
+├── main_logic.py                               
+├── sheet.py                                                
+├── config.py                                      
+├── utils.py                                                      
+├── requirements.txt                                                                    
+├── bot-credentials.json.example                             
+├── .gitignore                                                             
+└── README.md 
 
 *(Note: Actual font files like `arial.ttf` would have to be included here or in a `fonts/` subdirectory, if packaged with the Lambda.)*
 
