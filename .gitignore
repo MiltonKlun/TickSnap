@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenv
+# If you create your venv inside the project directory
+venv/
+# Or, if you named it something else
+.venv/
+
+# Environment variables file
+.env
+
+# Secrets - CRITICAL
+# Add the specific name of your service account JSON file
+bot-credentials.json
+# Or, more broadly, if you only have secret JSONs:
+# *.json
+
+# AWS SAM / Serverless Framework (if you use them later)
+.aws-sam/
+.serverless/
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Deployment package (if generated in project root)
+lambda_package.zip
+lambda_deploy_pkg/
+
+# Font files - if you don't want to commit large font files
+# and expect users to provide their own.
+# However, for Lambda, it's often easier to package them.
+# If they are small and open-license, committing them might be okay.
+# *.ttf
+# *.otf
