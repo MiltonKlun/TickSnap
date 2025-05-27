@@ -7,6 +7,7 @@ from dotenv import load_dotenv # For local development
 # In AWS Lambda, environment variables are set in the function's configuration
 load_dotenv()
 
+# ---- Logger setup ----
 logger = logging.getLogger(__name__)
 
 # ---- Google Sheets Configuration ----
@@ -40,12 +41,12 @@ if ALLOWED_USER_IDS_STR:
 else:
     logger.warning("ALLOWED_USER_IDS environment variable not set or empty. No users will be authorized.")
 
-# --- Font Configuration ---
+# ---- Font Configuration ----
 # Path to the directory containing font files (e.g., arial.ttf, arialbd.ttf)
 # Set via FONT_PATH environment variable. Defaults to current directory if not set.
 FONT_PATH = os.getenv("FONT_PATH", ".")
 
-# --- Logging Configuration ---
+# ---- Logging Configuration ----
 LOG_LEVEL_STR = os.getenv("LOG_LEVEL", "INFO").upper()
 LOG_LEVEL = getattr(logging, LOG_LEVEL_STR, logging.INFO)
 
@@ -54,7 +55,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 
-# --- Initialize Google Credentials ---
+# ---- Initialize Google Credentials ----
 # This is kept separate to allow other modules to import config values
 # without immediately trying to load credentials if they are not needed.
 def get_google_credentials():
