@@ -2,6 +2,9 @@
 
 TickSnap is a chatbot designed to automate the creation of installment purchase tickets for a small business. It provides a simple and agile way for authorized personnel to record payments, generate digital receipts, and maintain a master client ledger using Google Sheets as a no-cost database, easily accessible to the client.
 
+![GitHub last commit](https://img.shields.io/github/last-commit/tu-usuario/tu-repo)
+![GitHub stars](https://img.shields.io/github/stars/tu-usuario/tu-repo?style=social)
+![GitHub forks](https://img.shields.io/github/forks/tu-usuario/tu-repo?style=social)
 
 ![Python Version](https://img.shields.io/badge/python-3.12-blue.svg)
 ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange.svg)
