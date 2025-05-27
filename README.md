@@ -1,4 +1,5 @@
 # TickSnap
+
 TickSnap is a chatbot designed to automate the creation of installment purchase tickets for a small business. It provides a simple and agile way for authorized personnel to record payments, generate digital receipts, and maintain a master client ledger using Google Sheets as a no-cost database, easily accessible to the client.
 
 
@@ -103,6 +104,7 @@ For many small businesses, dedicated CRM or PoS systems can be expensive or over
     *   Note the **Sheet ID** (from its URL: `.../d/SHEET_ID/edit...`).
     *   **Share** this sheet with the Service Account Email (giving it "Editor" permissions).
     *   Structure your sheet with two tabs (default names are fine, `sheet.py` uses `sheet1` by default for the master data and implies a second sheet for logs if needed, but the current `log_payment_and_update_credit` in `sheet.py` logs to `sheet1` based on `find_first_empty_log_row`. This needs careful setup as per `sheet.py` column definitions).
+    *   (Note: The sheet is in Spanish due to client requirements. Adjust both the Google Sheet and the code to match your preferred language).
         *   **Master Data Sheet (`Sheet1` or as configured):**
             *   `M`: Nombre (First Name)
             *   `N`: Apellido (Last Name)
@@ -126,7 +128,7 @@ For many small businesses, dedicated CRM or PoS systems can be expensive or over
             *   `G`: Direccion (Address)
             *   `H`: Importe (Amount)
             *   `I`: Cant. Cuotas (Installments Qty)
-*   TrueType Font files (e.g., `arial.ttf`, `arialbd.ttf`) for ticket generation. If not using system fonts, these need to be packaged with the Lambda.
+*   TrueType Font files (e.g., `arial.ttf`, `arialbd.ttf`) for ticket generation. If not using system fonts, these need to be downloaded and packaged with the Lambda.
 
 ### Configuration
 
