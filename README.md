@@ -272,6 +272,8 @@ Contributions are welcome! If you have suggestions or want to improve the bot, p
 
 Please ensure your code follows PEP 8 guidelines and includes comments where necessary.
 
+⭐ If you found this project helpful, feel free to give it a star or share it!
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details (you'll need to create a LICENSE.md file with the MIT license text).
